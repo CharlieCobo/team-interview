@@ -6,8 +6,7 @@
   "author": "Carlos Cobo <charlie.cobo@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest --watch",
-    "test:coverage": "jest --collectCoverage --watch"
+    "test": "jest --watch"
   },
   "dependencies": {},
   "devDependencies": {
