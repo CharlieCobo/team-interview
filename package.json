@@ -1,0 +1,16 @@
+{
+  "name": "team-test",
+  "version": "1.0.0",
+  "description": "team test js",
+  "main": "index.js",
+  "author": "Carlos Cobo <charlie.cobo@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --watch",
+    "test:coverage": "jest --collectCoverage --watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "27.5.1"
+  }
+}
