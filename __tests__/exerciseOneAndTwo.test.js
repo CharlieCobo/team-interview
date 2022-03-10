@@ -21,6 +21,10 @@ describe("Exercise One", () => {
   test("should return 7", () => {
     expect(newSum(1)(2)(4)((result) => result)).toBe(7);
   });
+
+  test("should return 6", () => {
+    expect(newSum(1)(2)(4)(-1)((result) => result)).toBe(6);
+  });
 });
 
 describe("Exercise Two", () => {
@@ -34,4 +38,7 @@ describe("Exercise Two", () => {
 
   test("should return 29", () =>
     expect(newSum(1)(2)(3)(4)(5)(6)(8)((result) => result)).toBe(29));
+
+  test("should return -1", () =>
+    expect(newSum(1)(2)(3)(4)(5)(6)(8)(-30)((result) => result)).toBe(-1));
 });
