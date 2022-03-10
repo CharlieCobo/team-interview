@@ -1,4 +1,4 @@
-const { sum } = require("../exerciseOne");
+const { sum } = require("../exerciseOneAndTwo");
 
 describe("Exercise One", () => {
   let newSum;
@@ -21,4 +21,17 @@ describe("Exercise One", () => {
   test("should return 7", () => {
     expect(newSum(1)(2)(4)((result) => result)).toBe(7);
   });
+});
+
+describe("Exercise Two", () => {
+  let newSum;
+  beforeEach(() => {
+    newSum = sum;
+  });
+
+  test("should return 21", () =>
+    expect(newSum(1)(2)(3)(4)(5)(6)((result) => result)).toBe(21));
+
+  test("should return 29", () =>
+    expect(newSum(1)(2)(3)(4)(5)(6)(8)((result) => result)).toBe(29));
 });
